@@ -1,0 +1,13 @@
+name: diabetes-api
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.10
+  - fastapi
+  - uvicorn
+  - pandas
+  - scikit-learn==1.5.2
+  - numpy==2.1.1
+  - category_encoders==2.6.4
+prefix: /home/matt/anaconda3/envs/diabetes-api
