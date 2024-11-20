@@ -8,7 +8,7 @@ target_encoder = load_target_encoder()
 def predict(data: dict):
     df = pd.DataFrame([data])
 
-    df = preprocess_input_data(df, target_encoder)
+    processed_data = preprocess_input_data(df, target_encoder)
 
-    prediction = pipeline.predict(df)
-    return prediction[0]
+    prediction = pipeline.predict(processed_data.values)
+    return int(prediction[0])
